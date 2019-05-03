@@ -1,0 +1,19 @@
+{
+  "name": "autoCharge",
+  "version": "1.0.0",
+  "description": "Tarefa para auto carregar as contas que não devem zerar o saldo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "ASTPP",
+    "Cloudcom"
+  ],
+  "author": "Eduardo Felipe de Oliveira<eduardo_felipe_oliveira@yahoo.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "mysql2": "^1.6.5"
+  }
+}
