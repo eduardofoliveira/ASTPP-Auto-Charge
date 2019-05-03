@@ -15,6 +15,12 @@
 ```
 
 3. entrar na pasta e rodar o comando npm install
+
+```
+   cd ASTPP-Auto-Charge
+   npm install
+```
+
 4. rode o comando cp .env.example .env para fazer uma copia do arquivo .env.example em .env
 
 ```
@@ -29,4 +35,18 @@
 
 ```
    Exemplo node index.js 6145679936 100
+```
+
+7. Editar o arquivo do crontab agendando a tarefa de recarga
+
+```
+   contab -e
+
+```
+
+8. No agendamento abaixo todo o dia as 02:00 da manhã é feita a recarga automatica
+
+```
+   * 2 * * * root cd /path-onde-esta-o-index.js && node index.js 6145679936 100
+
 ```
